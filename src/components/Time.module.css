@@ -1,0 +1,61 @@
+/* Time.module.css */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .countdownContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #e2b091;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .circle p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .circle span {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #fff;
+  }
+  
+  .reminderButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .reminderButton:hover {
+    background-color: #f0f0f0;
+  }
+  
