@@ -1,0 +1,3 @@
+[build]
+  command = "npm run build"
+  publish = "public"  # Cambia esto si tu carpeta de publicación es diferente
