@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import Styles from './MainImage.module.css';
 
 export const MainImage = () => {

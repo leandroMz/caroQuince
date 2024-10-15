@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import Styles from './Time.module.css';
-
 export const Time = () => {
-  // Fecha y hora objetivo
   const targetDate = new Date('2023-11-23T21:00:00'); 
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -34,9 +33,11 @@ export const Time = () => {
   }, []);
 
   const handleSetReminder = () => {
-    // Aquí puedes agregar la lógica para agregar el recordatorio basado en la zona horaria local
-    alert('Recordatorio programado para el 23 de noviembre a las 21:00 en tu hora local.');
+    toast.success('Recordatorio programado para el 23 de noviembre a las 21:00 en tu hora local.', {
+       autoClose: 3000, 
+    });
   };
+  
 
   return (
     <div className={Styles.mainContainer}>
@@ -61,6 +62,7 @@ export const Time = () => {
       <button className={Styles.reminderButton} onClick={handleSetReminder}>
         🗓️ Agendar Recordatorio
       </button>
+      <ToastContainer />
     </div>
   );
 };
